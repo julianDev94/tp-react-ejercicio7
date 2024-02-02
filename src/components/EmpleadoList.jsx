@@ -8,5 +8,5 @@ const EmpleadoList = () => {
   );
 };
 
-//<ListGroup.Item>Cras justo odio</ListGroup.Item>
+
 export default EmpleadoList;
