@@ -4,14 +4,14 @@ import EmpleadoAvatar from "./EmpleadoAvatar";
 const EmpleadoRow = ({ empleado }) => {
   return (
     <ListGroup.Item className="my-3 d-flex justify-content-center border-0">
-      <Card style={{ width: '18rem' }} className="d-flex">
+      <Card className="cardEmpleado shadow-lg border-black d-flex flex-row">
       <EmpleadoAvatar empleado={empleado} />
       <Card.Body className="text-center">
         <Card.Title>{empleado.fullName}</Card.Title>
         <Card.Text>
         {empleado.title}
         </Card.Text>
-        <Card.Text>
+        <Card.Text className="">
         {empleado.department}
         </Card.Text>
       </Card.Body>
