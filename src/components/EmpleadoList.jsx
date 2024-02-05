@@ -4,8 +4,8 @@ import EmpleadoRow from "./EmpleadoRow";
 const EmpleadoList = ({ empleados }) => {
   return (
     <ListGroup>
-      {empleados.map((empleado) => (
-        <EmpleadoRow empleado={empleado}/>
+      {empleados.map((empleado, posicionEmpleado) => (
+        <EmpleadoRow key={posicionEmpleado} empleado={empleado}/>
       ))}
     </ListGroup>
   );
