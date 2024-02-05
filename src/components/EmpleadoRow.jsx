@@ -5,23 +5,23 @@ const EmpleadoRow = ({ empleado }) => {
   return (
     <ListGroup.Item className="my-3 d-flex justify-content-center border-0">
       <Card className="cardEmpleado shadow-lg border-black d-flex flex-row">
-      <EmpleadoAvatar empleado={empleado} />
-      <Card.Body className="text-center">
-        <Card.Title>{empleado.fullName}</Card.Title>
-        <Card.Text>
-        {empleado.title}
-        </Card.Text>
-        <Card.Text className="">
-        {empleado.department}
-        </Card.Text>
-      </Card.Body>
-    </Card> 
+        <EmpleadoAvatar empleado={empleado} />
+        <Card.Body>
+          <Card.Title>{empleado.fullName}</Card.Title>
+          <section className="d-flex flex-row text-center">
+            <Card.Text>{empleado.title}</Card.Text>
+            <Card.Text className="bg-primary text-light mx-3 px-1 fw-bold">
+              {empleado.department}
+            </Card.Text>
+          </section>
+        </Card.Body>
+      </Card>
     </ListGroup.Item>
   );
 };
 
-
-{/* <Card style={{ width: '18rem' }}>
+{
+  /* <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src="holder.js/100px180" />
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
@@ -31,8 +31,8 @@ const EmpleadoRow = ({ empleado }) => {
         </Card.Text>
         <Button variant="primary">Go somewhere</Button>
       </Card.Body>
-    </Card> */}
-
+    </Card> */
+}
 
 // <Card className="my-3 w-25 text-center shadow-lg border-black">
 //         <Card.Title className="mt-3">{empleado.fullName}</Card.Title>
